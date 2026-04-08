@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Svoi kopcheniya</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* NAVBAR /
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #111;
+    border-bottom: 1px solid #222;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff4d00;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+/ HERO /
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(45deg, #ff4d00, #ff0000);
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+/ PRODUCTS /
+.container {
+    padding: 30px 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255,0,0,0.2);
+}
+
+.price {
+    color: #ff4d00;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #ff0000;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff4d00;
+}
+
+/ FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🔥 Svoi kopcheniya</div>
+    <div>
+        <a href="#">Меню</a>
+        <a href="#">Контакти</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Копчення до Великодня 🐣</h1>
+    <p>Смачне, ароматне, домашнє 🔥</p>
+</section>
+
+<div class="container">
+    <div class="grid">
+
+        <div class="card">
+            <h2>🥩 Курочка</h2>
+            <div class="price">250 грн/кг</div>
+            <button onclick="order('Курочка')">Замовити</button>
+        </div>
+
+        <div class="card">
+            <h2>🥩 Реберця</h2>
+            <div class="price">470 грн/кг</div>
+            <button onclick="order('Реберця')">Замовити</button>
+        </div>
+
+        <div class="card">
+            <h2>🥩 Сало</h2>
+            <div class="price">450 грн/кг</div>
+            <button onclick="order('Сало')">Замовити</button>
+        </div>
+
+        <div class="card">
+            <h2>🥩 Балик</h2>
+            <div class="price">500 грн/кг</div>
+            <button onclick="order('Балик')">Замовити</button>
+        </div>
+
+        <div class="card">
+            <h2>🥩 Підчеревина</h2>
+            <div class="price">450 грн/кг</div>
+            <button onclick="order('Підчеревина')">Замовити</button>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+📲 Замовлення через Telegram / Direct
+</footer>
+
+<script>
+function order(product) {
+    window.location.href = "https://t.me/URBNKX?text=Хочу замовити: " + product;
+}
+</script>
+
+</body>
+</html>
